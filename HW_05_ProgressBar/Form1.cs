@@ -9,24 +9,26 @@ namespace HW_05_ProgressBar
 
         private void GoText(object sender, EventArgs e)
         {
-            progressBar1.Value = 0;
+            int numberProgress = 0;
+         
 
             if (textBox1.Text != "")
             {
-                progressBar1.Value += 25;
+                numberProgress += 25;
             }
             if (textBox2.Text != "")
             {
-                progressBar1.Value += 25;
+                numberProgress += 25;
             }
             if (textBox3.Text != "")
             {
-                progressBar1.Value += 25;
+                numberProgress += 25;
             }
             if (textBox4.Text != "")
             {
-                progressBar1.Value += 25;
+                numberProgress += 25;
             }
+            progressBar1.Value = numberProgress;
         }
 
         private void button1_Click(object sender, EventArgs e)
